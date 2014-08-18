@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body>
+<script src="bonsai.js"></script>
+<script src="jquery.js"></script>
+
+<div id="movie"></div>
+<script>
+bonsai.run(document.getElementById('movie'), {
+  code: function() {
+  var tracker = new Path().fill('gray').addTo(stage);
+
+function updateTracker(position) {
+  tracker.arc(position.x, position.y, 10, 0, Math.PI*2, 0).closePath();
+}
+
+updateTracker({x: 100, y:100});
+updateTracker({x: 100, y:200});
+
+stage.on('pointermove', function(e) {
+  updateTracker(e);
+}); 
+
+
+  },
+  width: 1000,
+  height: 500
+});
+
+// hyperlink can be replaced with a cross image
+</script>
+</body>
+</html>
