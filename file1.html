@@ -4,6 +4,7 @@
 </head>
 <body>
 <script src="bonsai.js"></script>
+<script src="jquery.js"></script>
 <div id="movie"></div>
 <script>
   var element = document.getElementById('movie');
@@ -18,16 +19,16 @@ function runner () {
 var circle1=new Circle(100,100,30);
 circle1.fill('red');
 circle1.addTo(stage);
-var circle1=new Circle(180,100,30);
-circle1.fill('yellow');
-circle1.addTo(stage);
-var circle1=new Circle(100,180,30);
-circle1.fill('green');
-circle1.addTo(stage);
-var circle1=new Circle(180,180,30);
-circle1.fill('blue');
-circle1.addTo(stage);
-
+var circle2=new Circle(180,100,30);
+circle2.fill('yellow');
+circle2.addTo(stage);
+var circle3=new Circle(100,180,30);
+circle3.fill('green');
+circle3.addTo(stage);
+var circle4=new Circle(180,180,30);
+circle4.fill('blue');
+circle4.addTo(stage);
+var t = new Text('L1').addTo(stage).attr('fontSize','25px').attr('x',80).attr('y',80);
 }
 </script>
 </body>
