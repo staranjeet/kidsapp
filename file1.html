@@ -1,0 +1,34 @@
+<html>
+<head>
+
+</head>
+<body>
+<script src="bonsai.js"></script>
+<div id="movie"></div>
+<script>
+  var element = document.getElementById('movie');
+bonsai.run(movie, {
+  code: runner,
+  width: 800,
+  height: 400
+});
+
+function runner () {
+  
+var circle1=new Circle(100,100,30);
+circle1.fill('red');
+circle1.addTo(stage);
+var circle1=new Circle(180,100,30);
+circle1.fill('yellow');
+circle1.addTo(stage);
+var circle1=new Circle(100,180,30);
+circle1.fill('green');
+circle1.addTo(stage);
+var circle1=new Circle(180,180,30);
+circle1.fill('blue');
+circle1.addTo(stage);
+
+}
+</script>
+</body>
+</html>
