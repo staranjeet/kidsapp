@@ -11,6 +11,8 @@ urlpatterns = patterns('',
     url(r'level2', 'kids.views.level2', name='level2'),
     url(r'level3', 'kids.views.level3', name='level3'),
     url(r'level4', 'kids.views.level4', name='level4'),
+    url(r'parallax', 'kids.views.parallax', name='level4'),
+
 
     # url(r'^kidsapp/', include('kidsapp.foo.urls')),
 

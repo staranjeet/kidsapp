@@ -22,6 +22,9 @@ def level3(request):
 def level4(request):
 	return render_to_response('level4.html', context_instance=RequestContext(request))
 
+def parallax(request):
+	return render_to_response('parallax.html', context_instance=RequestContext(request))
+
 	# return HttpResponse("Coming soon level4 page !!!!")
 
 
