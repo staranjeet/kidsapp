@@ -8,21 +8,19 @@ from django.conf import settings
 import json
 # Create your views here.
 def home(request):
-	return HttpResponse("Coming soon Home page  !!!!")
+	return render_to_response('index.html', context_instance=RequestContext(request))
 
 def level1(request):
-	return HttpResponse("Coming soon level1 page !!!!")
+	return render_to_response('level1.html', context_instance=RequestContext(request))
 
 def level2(request):
-	return HttpResponse("Coming soon level2 page !!!!")
+	return render_to_response('level2.html', context_instance=RequestContext(request))
 
 def level3(request):
-	return HttpResponse("Coming soon level3 page !!!!")
+	return render_to_response('level3.html', context_instance=RequestContext(request))
 
 def level4(request):
-	c = {}
-	c.update(csrf(request))
-	return render_to_response('index.html', context_instance=RequestContext(request))
+	return render_to_response('level4.html', context_instance=RequestContext(request))
 
 	# return HttpResponse("Coming soon level4 page !!!!")
 
