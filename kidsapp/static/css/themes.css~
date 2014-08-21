@@ -105,7 +105,7 @@
 	color: rgb(42, 206, 185);
 }
 .coverflow section.bespoke-before {
-	-webkit-transform: translateX(-270px) rotateY(45deg) scale(0.6);
+	-webkit-transform: translateX(-270px) rotateY(45deg) scale(0.9);
 	-moz-transform: translateX(-270px) rotateY(45deg) scale(0.6);
 	-ms-transform: translateX(-270px) rotateY(45deg) scale(0.6);
 	-o-transform: translateX(-270px) rotateY(45deg) scale(0.6);

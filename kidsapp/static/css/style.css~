@@ -258,7 +258,7 @@ section {
 	border-radius: 30px;
 	width: 1012px;			/*width of the section */
 	height: 470px;
-	position: absolute;		/* changes are done here */
+	position: absolute;
 	top: 5%;
 	left: 10%;
 	/*margin-left: -556px;*/
