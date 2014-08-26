@@ -22,6 +22,10 @@ def level3(request):
 def level4(request):
 	return render_to_response('level4.html', context_instance=RequestContext(request))
 
+def level5(request):
+	return render_to_response('level5.html', context_instance=RequestContext(request))
+def level6(request):
+	return render_to_response('level6.html', context_instance=RequestContext(request))
 def parallax(request):
 	return render_to_response('parallax.html', context_instance=RequestContext(request))
 
