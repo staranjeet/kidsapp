@@ -256,11 +256,11 @@ section {
 	transform: none;
 	background: #c0c0c0;
 	border-radius: 30px;
-	width: 1012px;			/*width of the section */
+	width: 100%;			/*width of the section */
 	height: 470px;
 	position: absolute;		/* changes are done here */
 	top: 5%;
-	left: 10%;
+	left: 0%;
 	/*margin-left: -556px;*/
 	/*margin-top: -250px;*/
 	opacity: 0;

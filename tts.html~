@@ -71,9 +71,7 @@
 
 		<table>
 			<tr>
-				<th>
-					<label for="textInputLang">Language: </label>
-				</th>
+				
 				<td>
 					<input type="hidden" name="tl" id="textInputLang" value="en">
 						

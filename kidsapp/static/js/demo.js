@@ -35,7 +35,7 @@
 
 	function initInstructions() {
 		if (isTouch()) {
-			document.getElementById('input-method').innerHTML = 'Swipe up and down';
+			document.getElementById('input-method').innerHTML = '';
 		}
 
 		instructionsTimeout = setTimeout(showInstructions, 5000);
@@ -136,7 +136,7 @@
 	function selectTheme(index) {
 		var theme = themes[index];
 		document.body.className = theme;
-		document.getElementById('theme').innerHTML = theme[0].toUpperCase() + theme.slice(1);
+		//document.getElementById('theme').innerHTML = theme[0].toUpperCase() + theme.slice(1);
 		selectedThemeIndex = index;
 	}
 

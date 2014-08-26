@@ -34,7 +34,7 @@
 		<section style="cursor: pointer;" onclick="location.href='level3.html';"><a href="level3.html" ><h1><b>3</b></h1></a></section>
 		<section style="cursor: pointer;" onclick="location.href='level4.html';"><a href="level4.html" ><h1><b>4</b></h1></a></section>
 		<section style="cursor: pointer;" onclick="location.href='level5.html';"><a href="level5.html" ><h1><b>5</b></h1></a></section>
-		<section><a href="level6.html" ><h1><b>6</b></h1></a></section>
+		<section style="cursor: pointer;" onclick="location.href='level6.html';"><a href="level6.html" ><h1><b>6</b></h1></a></section>
 				
 				
 	
@@ -42,9 +42,7 @@
 		</div>
 		<footer>
 				<div class="themes">
-					<p>
-						<strong><span class="colon"></span></strong> <span id="theme"></span>
-					</p>
+					
 				</div>
 
 			<!-- <div class="social">
