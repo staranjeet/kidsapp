@@ -65,9 +65,18 @@
 	ga('create', 'UA-39594063-4', 'wagerfield.github.io');
 	ga('send', 'pageview');
 	</script>
-
+<script>
+function myfun()
+{
+	setTimeout(abc,4000);
+};
+function abc()
+{
+	window.location="index.html";
+};
+</script>
 </head>
-<body>
+<body onload="myfun();">
 
 	<div id="fb-root"></div>
 
