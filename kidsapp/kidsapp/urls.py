@@ -7,7 +7,7 @@ from django.conf.urls import patterns, include, url
 urlpatterns = patterns('',
     # Examples:
     #url(r'^$', 'kids.views.parallax', name='parallax'),
-    url(r'', 'kids.views.parallax', name='level4'),
+    url(r'^$', 'kids.views.parallax', name='parallax'),
     url(r'level1', 'kids.views.level1', name='level1'),
     url(r'level2', 'kids.views.level2', name='level2'),
     url(r'level3', 'kids.views.level3', name='level3'),
