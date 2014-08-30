@@ -6,14 +6,14 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'kids.views.home', name='home'),
+    #url(r'^$', 'kids.views.parallax', name='parallax'),
+    url(r'', 'kids.views.parallax', name='level4'),
     url(r'level1', 'kids.views.level1', name='level1'),
     url(r'level2', 'kids.views.level2', name='level2'),
     url(r'level3', 'kids.views.level3', name='level3'),
     url(r'level4', 'kids.views.level4', name='level4'),
     url(r'level5', 'kids.views.level5', name='level5'),
     url(r'level6', 'kids.views.level6', name='level6'),    
-    url(r'parallax', 'kids.views.parallax', name='level4'),
     url(r'level11', 'kids.views.level11', name='level11'),
     url(r'level12', 'kids.views.level12', name='level12'),
     url(r'level13', 'kids.views.level13', name='level13'),
