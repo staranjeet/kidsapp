@@ -22,10 +22,8 @@ def level3(request):
 def level4(request):
 	return render_to_response('level4.html', context_instance=RequestContext(request))
 
-def level5(request):
-	return render_to_response('level5.html', context_instance=RequestContext(request))
-def level6(request):
-	return render_to_response('level6.html', context_instance=RequestContext(request))
+def levels(request):
+	return render_to_response('levels.html', context_instance=RequestContext(request))
 def parallax(request):
 	return render_to_response('parallax.html', context_instance=RequestContext(request))
 
@@ -76,28 +74,3 @@ def level43(request):
 
 def level44(request):
 	return render_to_response('4_4.html', context_instance=RequestContext(request))
-
-def level51(request):
-	return render_to_response('5_1.html', context_instance=RequestContext(request))
-
-def level52(request):
-	return render_to_response('5_2.html', context_instance=RequestContext(request))
-
-def level53(request):
-	return render_to_response('5_3.html', context_instance=RequestContext(request))
-
-def level54(request):
-	return render_to_response('5_4.html', context_instance=RequestContext(request))
-
-def level61(request):
-	return render_to_response('6_1.html', context_instance=RequestContext(request))
-
-def level62(request):
-	return render_to_response('6_2.html', context_instance=RequestContext(request))
-
-def level63(request):
-	return render_to_response('6_3.html', context_instance=RequestContext(request))
-
-def level64(request):
-	return render_to_response('6_4.html', context_instance=RequestContext(request))
-
