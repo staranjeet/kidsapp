@@ -38,7 +38,7 @@ urlpatterns = patterns('',
     url(r'leveldc', 'kidsapp.views.level43', name='level43'),
     url(r'leveldd', 'kidsapp.views.level44', name='level44'),
     url(r'levelde', 'kidsapp.views.level45', name='level45'),
-    url(r'par', 'kidsapp.views.parallax', name='parallax'),
+    url(r'google731333321e881da7.html', 'kidsapp.views.par', name='par'),
 
 
 
