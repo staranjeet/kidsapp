@@ -30,32 +30,42 @@
 }
 	</style>
 	<script>
+	var c1=0,c2=0,c3=0,c4=0;
 	function batman()
 	{			
 		var myElement = document.getElementById("batman");		
 		myElement.style.color = "red";
-		myElement.innerHTML+=' X';
+		if(c1==0)
+		{myElement.innerHTML+=' X';c1++;}
 		
 	};
 	function ironman()
 	{
 		var myElement = document.getElementById("ironman");		
 		myElement.style.color = "green";
-		myElement.innerHTML+='&#10004;';
+		if(c4==0){
+			myElement.innerHTML+='&#10004;';
 		myElement.style.fontSize="25";
 		setTimeout("move()",2000);
+		c4++;
+		}
+		
 	};
 	function superman()
 	{
 		var myElement = document.getElementById("superman");		
 		myElement.style.color = "red";
-		myElement.innerHTML+=' X';
+		if(c2==0)
+		{myElement.innerHTML+=' X';c2++;}
+		
 	};
 	function spiderman()
 	{
 		var myElement = document.getElementById("spiderman");		
 		myElement.style.color = "red";
-		myElement.innerHTML+=' X';
+		if(c3==0)
+		{myElement.innerHTML+=' X';c3++;}
+		
 	};
 	function move()
 	{
