@@ -1,8 +1,69 @@
 <!doctype html>
 <html>
 	<head>
+
+		<style>
+		#question{
+			color:black;
+			margin-top:-230px;
+			font-size:70px;
+		}
+#batman{
+	color:black;
+	font-size:60px;	
+}
+#superman{
+	color:black;
+	font-size:60px;
+}
+#spiderman{
+	color:black;
+	font-size:60px;
+}
+#ironman{
+	color:black;
+	font-size:60px;
+}
+#imagepoint{
+	margin-top:190px;
+	margin-left:70px;
+}
+	</style>
+	<script>
+	function batman()
+	{			
+		var myElement = document.getElementById("batman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+		
+	};
+	function ironman()
+	{
+		var myElement = document.getElementById("ironman");		
+		myElement.style.color = "green";
+		myElement.innerHTML+='&#10004;';
+		myElement.style.fontSize="25";
+		setTimeout("move()",2000);
+	};
+	function superman()
+	{
+		var myElement = document.getElementById("superman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+	};
+	function spiderman()
+	{
+		var myElement = document.getElementById("spiderman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+	};
+	function move()
+	{
+		window.location="level44.html";	//should redirect it to 4_4.html jo ho nai rha h
+	};
+	</script>
 		<meta name="viewport" content="width=device-width" />
-		<title>Bespoke.js</title>
+		<title>Parts of Body</title>
 
 		<meta content="Bespoke.js" property="og:title" />
 		<meta content="Bespoke.js" property="og:site_name" />
@@ -18,18 +79,22 @@
 	<body class="coverflow">
 		<div id="main">
 			<header>
-					<h1>KidsApp</h1>
-					<h2>the contents of the level3 </h2>
+					
 					<p class="hidden"><span id="input-method">Press up and down keys</span> to view example themes.</p>
 			</header>
 
 			<article>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
+				<section>
+<div id="imagepoint"><img src="/static/images/partsofbody/6.png" alt="Turtle" height="230" width="230"></div>
+					<h2><div id="question">Which organ helps us to see the beautiful world?</div></br>
+				<a href="javascript: void 0;" onclick="batman();"><div id="ironman">A) Eyes</div></a>
+				<a href="javascript: void 0;" onclick="spiderman();"><div id="spiderman">B) Nose</div></a>
+				<a href="javascript: void 0;" onclick="ironman();"><div id="batman">C) Ears</div></a>
+					<a href="javascript: void 0;" onclick="superman();"><div id="superman">D) Legs</div></a></h2>
+
+					
+				</section>
+				
 				
 	
 			</article>

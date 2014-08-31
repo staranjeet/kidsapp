@@ -135,7 +135,7 @@ h1 {
 	font-family: Raleway Dots;
 
 	/* Fix thin font rendering on Windows */
-	font-size: 156px;
+	font-size: 200px;
 	-webkit-transform: scale(0.5);
 	-moz-transform: scale(0.5);
 	-ms-transform: scale(0.5);
@@ -173,7 +173,7 @@ h2 {
 	font-family: Gill Sans, Segoe UI Light, Helvetica, Arial, sans-serif;
 	font-size: 17px;
 	font-weight: 200;
-	color: white;
+	
 	opacity: 0.9;
 }
 

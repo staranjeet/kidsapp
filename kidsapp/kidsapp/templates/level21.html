@@ -1,0 +1,62 @@
+<html>
+<head>
+	<style>
+#batman{
+	color:black;
+	
+}
+#superman{
+	color:black;
+}
+#spiderman{
+	color:black;
+}
+#ironman{
+	color:black;
+}
+	</style>
+	<script>
+	function batman()
+	{			
+		var myElement = document.getElementById("batman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+		
+	};
+	function ironman()
+	{
+		var myElement = document.getElementById("ironman");		
+		myElement.style.color = "green";
+		myElement.innerHTML+='&#10004;';
+		myElement.style.fontSize="25";
+		setTimeout("move()",3000);
+	};
+	function superman()
+	{
+		var myElement = document.getElementById("superman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+	};
+	function spiderman()
+	{
+		var myElement = document.getElementById("spiderman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+	};
+	function move()
+	{
+		window.location="try2.html";
+	};
+	</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+		What is your name ?<tr>
+	<tr><td><a href="javascript: void 0;" onclick="batman();">A</a> <div id="batman">this is option 1</div></td></tr>
+		<tr><td><a href="javascript: void 0;" onclick="spiderman();">B</a> <div id="spiderman">this is option 2</div></td></tr>
+		<tr><td><a href="javascript: void 0;" onclick="ironman();">C</a> <div id="ironman">this is correct option</div></td></tr>
+		<tr><td><a href="javascript: void 0;" onclick="superman();">D</a> <div id="superman">this is option 4</div></td></tr>
+		</table>
+</body>
+</html>

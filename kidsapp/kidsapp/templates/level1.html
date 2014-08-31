@@ -1,6 +1,54 @@
 <!doctype html>
 <html>
 	<head>
+		<style>
+#batman{
+	color:black;
+	
+}
+#superman{
+	color:black;
+}
+#spiderman{
+	color:black;
+}
+#ironman{
+	color:black;
+}
+	</style>
+	<script>
+	function batman()
+	{			
+		var myElement = document.getElementById("batman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+		
+	};
+	function ironman()
+	{
+		var myElement = document.getElementById("ironman");		
+		myElement.style.color = "green";
+		myElement.innerHTML+='&#10004;';
+		myElement.style.fontSize="25";
+		setTimeout("move()",3000);
+	};
+	function superman()
+	{
+		var myElement = document.getElementById("superman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+	};
+	function spiderman()
+	{
+		var myElement = document.getElementById("spiderman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+	};
+	function move()
+	{
+		window.location="try2.html";
+	};
+	</script>
 		<meta name="viewport" content="width=device-width" />
 		<title>Bespoke.js</title>
 
@@ -18,30 +66,40 @@
 	<body class="coverflow">
 		<div id="main">
 			<header>
-					<h1>KidsApp</h1>
-					<h2>This is the level1 page</h2>
+					
+					
 					<p class="hidden"><span id="input-method">Press up and down keys</span> to view example themes.</p>
 			</header>
 
 			<article>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
+
+				<section><img src="/static/images/wonders/1turtle.png" alt="Turtle" height="530" width="100%"></section>
+				<section><img src="/static/images/wonders/3turtle.png" alt="Turtle" height="530" width="100%"></section>
+				<section><img src="/static/images/wonders/4turtle.png" alt="Turtle" height="530" width="100%"></section>
+				<section><img src="/static/images/wonders/5turtle.png" alt="Turtle" height="530" width="100%"></section>
+				<section><img src="/static/images/wonders/6turtle.png" alt="Turtle" height="530" width="100%"></section>
+				<section><img src="/static/images/wonders/7turtle.png" alt="Turtle" height="530" width="100%"></section>
+				<section><img src="/static/images/wonders/8turtle.png" alt="Turtle" height="530" width="100%"></section>
+				<section><img src="/static/images/wonders/9turtle.png" alt="Turtle" height="530" width="100%"></section>
+				<section><img src="/static/images/wonders/10turtle.png" alt="Turtle" height="530" width="100%"></section>
+				<section><img src="/static/images/wonders/12as.png" alt="Turtle" height="530" width="100%"></section>
+				<section><img src="/static/images/wonders/13tur.png" alt="Turtle" height="530" width="100%"></section>
+				<section><img src="/static/images/wonders/12turtle.png" alt="Turtle" height="530" width="100%"></section>
+				<section><img src="/static/images/wonders/12turtle.png" alt="Turtle" height="530" width="100%"></section>
+				<section><img src="/static/images/wonders/14.png" alt="Turtle" height="530" width="100%"></section>
+				<section>
+					
 	
+	
+				<table>
+			<tr>
+		What is your name ?<tr>
+	<tr><td><a href="javascript: void 0;" onclick="batman();">A</a> <div id="batman">this is option 1</div></td></tr>
+		<tr><td><a href="javascript: void 0;" onclick="spiderman();">B</a> <div id="spiderman">this is option 2</div></td></tr>
+		<tr><td><a href="javascript: void 0;" onclick="ironman();">C</a> <div id="ironman">this is correct option</div></td></tr>
+		<tr><td><a href="javascript: void 0;" onclick="superman();">D</a> <div id="superman">this is option 4</div></td></tr>
+		</table>
+	</section>
 			</article>
 		</div>
 		<footer>
