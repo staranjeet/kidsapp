@@ -9,19 +9,19 @@
 		}
 #batman{
 	color:black;
-	font-size:60px;	
+	font-size:47px;	
 }
 #superman{
 	color:black;
-	font-size:60px;
+	font-size:47px;
 }
 #spiderman{
 	color:black;
-	font-size:60px;
+	font-size:47px;
 }
 #ironman{
 	color:black;
-	font-size:60px;
+	font-size:47px;
 }
 #imagepoint{
 	margin-top:190px;
@@ -29,32 +29,42 @@
 }
 	</style>
 	<script>
+	var c1=0,c2=0,c3=0,c4=0;
 	function batman()
 	{			
 		var myElement = document.getElementById("batman");		
 		myElement.style.color = "red";
-		myElement.innerHTML+=' X';
+		if(c1==0)
+		{myElement.innerHTML+=' X';c1++;}
 		
 	};
 	function ironman()
 	{
 		var myElement = document.getElementById("ironman");		
 		myElement.style.color = "green";
-		myElement.innerHTML+='&#10004;';
+		if(c4==0){
+			myElement.innerHTML+='&#10004;';
 		myElement.style.fontSize="25";
 		setTimeout("move()",2000);
+		c4++;
+		}
+		
 	};
 	function superman()
 	{
 		var myElement = document.getElementById("superman");		
 		myElement.style.color = "red";
-		myElement.innerHTML+=' X';
+		if(c2==0)
+		{myElement.innerHTML+=' X';c2++;}
+		
 	};
 	function spiderman()
 	{
 		var myElement = document.getElementById("spiderman");		
 		myElement.style.color = "red";
-		myElement.innerHTML+=' X';
+		if(c3==0)
+		{myElement.innerHTML+=' X';c3++;}
+		
 	};
 	function move()
 	{
@@ -88,8 +98,9 @@
 			<div id="imagepoint"><img src="/static/images/profession/4.png" alt="Turtle" height="230" width="230"></div>
 					<h2><div id="question">Knife is used to _______?</div></br>
 				<a href="javascript: void 0;" onclick="batman();"><div id="batman">A) Writing </div></a>
-				<a href="javascript: void 0;" onclick="spiderman();"><div id="spiderman">B) Reading </div></a>
-			<a href="javascript: void 0;" onclick="ironman();"><div id="ironman">C) Cutting vegetables and fruit </div></a>
+		<a href="javascript: void 0;" onclick="ironman();"><div id="ironman">B) Cutting vegetables and fruit </div></a>
+				<a href="javascript: void 0;" onclick="spiderman();"><div id="spiderman">C) Reading </div></a>
+		
 		<a href="javascript: void 0;" onclick="superman();"><div id="superman">D) Playing </div></a></h2>
 
 

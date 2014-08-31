@@ -5,23 +5,23 @@
 		#question{
 			color:black;
 			margin-top:-230px;
-			font-size:70px;
+			font-size:75px;
 		}
 #batman{
 	color:black;
-	font-size:60px;	
+	font-size:55px;	
 }
 #superman{
 	color:black;
-	font-size:60px;
+	font-size:55px;
 }
 #spiderman{
 	color:black;
-	font-size:60px;
+	font-size:55px;
 }
 #ironman{
 	color:black;
-	font-size:60px;
+	font-size:55px;
 }
 #imagepoint{
 	margin-top:190px;
@@ -29,32 +29,42 @@
 }
 	</style>
 	<script>
+	var c1=0,c2=0,c3=0,c4=0;
 	function batman()
 	{			
 		var myElement = document.getElementById("batman");		
 		myElement.style.color = "red";
-		myElement.innerHTML+=' X';
+		if(c1==0)
+		{myElement.innerHTML+=' X';c1++;}
 		
 	};
 	function ironman()
 	{
 		var myElement = document.getElementById("ironman");		
 		myElement.style.color = "green";
-		myElement.innerHTML+='&#10004;';
+		if(c4==0){
+			myElement.innerHTML+='&#10004;';
 		myElement.style.fontSize="25";
 		setTimeout("move()",2000);
+		c4++;
+		}
+		
 	};
 	function superman()
 	{
 		var myElement = document.getElementById("superman");		
 		myElement.style.color = "red";
-		myElement.innerHTML+=' X';
+		if(c2==0)
+		{myElement.innerHTML+=' X';c2++;}
+		
 	};
 	function spiderman()
 	{
 		var myElement = document.getElementById("spiderman");		
 		myElement.style.color = "red";
-		myElement.innerHTML+=' X';
+		if(c3==0)
+		{myElement.innerHTML+=' X';c3++;}
+		
 	};
 	function move()
 	{
@@ -109,8 +119,11 @@
 					<h2><div id="question">What does a Barber do?</div></br>
 				<a href="javascript: void 0;" onclick="batman();"><div id="batman">A) He is a businessman </div></a>
 				<a href="javascript: void 0;" onclick="spiderman();"><div id="spiderman">B) Drives Car </div></a>
-				<a href="javascript: void 0;" onclick="ironman();"><div id="ironman">C) Cut hairs of the people </div></a>
-		<a href="javascript: void 0;" onclick="superman();"><div id="superman">D) Plant trees in th garden </div></a></h2>
+				
+		<a href="javascript: void 0;" onclick="superman();"><div id="superman">C) Plant trees in th garden </div></a>
+<a href="javascript: void 0;" onclick="ironman();"><div id="ironman">D) Cut hairs of the people </div></a>
+
+	</h2>
 				</section>
 	
 			</article>
