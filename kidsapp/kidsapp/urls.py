@@ -6,7 +6,6 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     # Examples:
-    #url(r'^$', 'kids.views.parallax', name='parallax'),
     url(r'^$', 'kids.views.parallax', name='parallax'),
     url(r'level1', 'kids.views.level1', name='level1'),
     url(r'levelaa', 'kids.views.level11', name='level11'),
@@ -22,17 +21,21 @@ urlpatterns = patterns('',
     url(r'levelbc', 'kids.views.level23', name='level23'),
     url(r'levelbd', 'kids.views.level24', name='level24'),
     url(r'levelbe', 'kids.views.level25', name='level14'),
+
     url(r'level3', 'kids.views.level3', name='level3'),
     url(r'levelca', 'kids.views.level31', name='level31'),
     url(r'levelcb', 'kids.views.level32', name='level32'),
     url(r'levelcc', 'kids.views.level33', name='level33'),
     url(r'levelcd', 'kids.views.level34', name='level34'),
+    
     url(r'level4', 'kids.views.level4', name='level4'),
     url(r'levelda', 'kids.views.level41', name='level41'),
     url(r'leveldb', 'kids.views.level42', name='level42'),
     url(r'leveldc', 'kids.views.level43', name='level43'),
     url(r'leveldd', 'kids.views.level44', name='level44'),
     url(r'levelde', 'kids.views.level45', name='level45'),
+    url(r'par', 'kids.views.parallax', name='parallax'),
+
 
 
 
