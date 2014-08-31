@@ -21,7 +21,6 @@ def level3(request):
 
 def level4(request):
 	return render_to_response('level4.html', context_instance=RequestContext(request))
-
 def levels(request):
 	return render_to_response('levels.html', context_instance=RequestContext(request))
 def parallax(request):
@@ -39,6 +38,9 @@ def level13(request):
 def level14(request):
 	return render_to_response('1_4.html', context_instance=RequestContext(request))
 
+def level15(request):
+	return render_to_response('level15.html', context_instance=RequestContext(request))
+
 def level21(request):
 	return render_to_response('2_1.html', context_instance=RequestContext(request))
 
@@ -50,6 +52,9 @@ def level23(request):
 
 def level24(request):
 	return render_to_response('2_4.html', context_instance=RequestContext(request))
+def level25(request):
+	return render_to_response('level25.html', context_instance=RequestContext(request))
+
 
 def level31(request):
 	return render_to_response('3_1.html', context_instance=RequestContext(request))
@@ -74,3 +79,5 @@ def level43(request):
 
 def level44(request):
 	return render_to_response('4_4.html', context_instance=RequestContext(request))
+def level45(request):
+	return render_to_response('level45.html', context_instance=RequestContext(request))
