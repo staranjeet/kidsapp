@@ -1,8 +1,68 @@
 <!doctype html>
 <html>
 	<head>
+		<style>
+		#question{
+			color:black;
+			margin-top:-230px;
+			font-size:70px;
+		}
+#batman{
+	color:black;
+	font-size:60px;	
+}
+#superman{
+	color:black;
+	font-size:60px;
+}
+#spiderman{
+	color:black;
+	font-size:60px;
+}
+#ironman{
+	color:black;
+	font-size:60px;
+}
+#imagepoint{
+	margin-top:190px;
+	margin-left:70px;
+}
+	</style>
+	<script>
+	function batman()
+	{			
+		var myElement = document.getElementById("batman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+		
+	};
+	function ironman()
+	{
+		var myElement = document.getElementById("ironman");		
+		myElement.style.color = "green";
+		myElement.innerHTML+='&#10004;';
+		myElement.style.fontSize="25";
+		setTimeout("move()",2000);
+	};
+	function superman()
+	{
+		var myElement = document.getElementById("superman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+	};
+	function spiderman()
+	{
+		var myElement = document.getElementById("spiderman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+	};
+	function move()
+	{
+		window.location="level32.html";	//should redirect it to 3_2.html jo ho nai rha h
+	};
+	</script>
 		<meta name="viewport" content="width=device-width" />
-		<title>Bespoke.js</title>
+		<title>Profession</title>
 
 		<meta content="Bespoke.js" property="og:title" />
 		<meta content="Bespoke.js" property="og:site_name" />
@@ -27,8 +87,7 @@
 				<section><img src="/static/images/profession/2.png" alt="Turtle" height="530" width="100%"></section>
 				<section><img src="/static/images/profession/3.png" alt="Turtle" height="530" width="100%"></section>
 				<section><img src="/static/images/profession/4.png" alt="Turtle" height="530" width="100%"></section>
-				<section><img src="/static/images/profession/5.png" alt="Turtle" height="530" width="100%"></section>
-				
+				<section><img src="/static/images/profession/5.png" alt="Turtle" height="530" width="100%"></section>	
 				<section><img src="/static/images/profession/7.png" alt="Turtle" height="530" width="100%"></section>
 				<section><img src="/static/images/profession/8.png" alt="Turtle" height="530" width="100%"></section>
 				<section><img src="/static/images/profession/9.png" alt="Turtle" height="530" width="100%"></section>
@@ -44,6 +103,15 @@
 				<section><img src="/static/images/profession/19.png" alt="Turtle" height="530" width="100%"></section>
 				<section><img src="/static/images/profession/20.png" alt="Turtle" height="530" width="100%"></section>
 				<section><img src="/static/images/profession/21.png" alt="Turtle" height="530" width="100%"></section>
+				<section><h1>Questions?<h1></section>
+				<section>
+			<div id="imagepoint"><img src="/static/images/profession/4.png" alt="Turtle" height="230" width="230"></div>
+					<h2><div id="question">What does a Barber do?</div></br>
+				<a href="javascript: void 0;" onclick="batman();"><div id="batman">A) He is a businessman </div></a>
+				<a href="javascript: void 0;" onclick="spiderman();"><div id="spiderman">B) Drives Car </div></a>
+				<a href="javascript: void 0;" onclick="ironman();"><div id="ironman">C) Cut hairs of the people </div></a>
+		<a href="javascript: void 0;" onclick="superman();"><div id="superman">D) Plant trees in th garden </div></a></h2>
+				</section>
 	
 			</article>
 		</div>

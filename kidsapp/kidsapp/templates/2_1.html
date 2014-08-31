@@ -2,18 +2,30 @@
 <html>
 	<head>
 		<style>
+		#question{
+			color:black;
+			margin-top:-230px;
+			font-size:70px;
+		}
 #batman{
 	color:black;
-	
+	font-size:60px;	
 }
 #superman{
 	color:black;
+	font-size:60px;
 }
 #spiderman{
 	color:black;
+	font-size:60px;
 }
 #ironman{
 	color:black;
+	font-size:60px;
+}
+#imagepoint{
+	margin-top:190px;
+	margin-left:70px;
 }
 	</style>
 	<script>
@@ -30,7 +42,7 @@
 		myElement.style.color = "green";
 		myElement.innerHTML+='&#10004;';
 		myElement.style.fontSize="25";
-		setTimeout("move()",3000);
+		setTimeout("move()",2000);
 	};
 	function superman()
 	{
@@ -46,7 +58,7 @@
 	};
 	function move()
 	{
-		window.location="try2.html";
+		window.location="level22.html";	//should redirect it to 2_2.html jo ho nai rha h
 	};
 	</script>
 		<meta name="viewport" content="width=device-width" />
@@ -72,12 +84,15 @@
 			</header>
 
 			<article>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
+				<section>
+
+		<div id="imagepoint"><img src="/static/images/objects/10eng.png" alt="Turtle" height="230" width="230"></div>
+					<h2><div id="question">Racket is used for playing___</div></br>
+				<a href="javascript: void 0;" onclick="batman();"><div id="batman">A) Football </div></a>
+				<a href="javascript: void 0;" onclick="spiderman();"><div id="spiderman">B) Cricket </div></a>
+				<a href="javascript: void 0;" onclick="ironman();"><div id="ironman">C) Badminton </div></a>
+		<a href="javascript: void 0;" onclick="superman();"><div id="superman">D) Carrom </div></a></h2></section>
+			
 				
 	
 			</article>

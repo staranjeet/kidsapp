@@ -1,6 +1,66 @@
 <!doctype html>
 <html>
 	<head>
+		<style>
+		#question{
+			color:black;
+			margin-top:-230px;
+			font-size:70px;
+		}
+#batman{
+	color:black;
+	font-size:60px;	
+}
+#superman{
+	color:black;
+	font-size:60px;
+}
+#spiderman{
+	color:black;
+	font-size:60px;
+}
+#ironman{
+	color:black;
+	font-size:60px;
+}
+#imagepoint{
+	margin-top:190px;
+	margin-left:70px;
+}
+	</style>
+	<script>
+	function batman()
+	{			
+		var myElement = document.getElementById("batman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+		
+	};
+	function ironman()
+	{
+		var myElement = document.getElementById("ironman");		
+		myElement.style.color = "green";
+		myElement.innerHTML+='&#10004;';
+		myElement.style.fontSize="25";
+		setTimeout("move()",2000);
+	};
+	function superman()
+	{
+		var myElement = document.getElementById("superman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+	};
+	function spiderman()
+	{
+		var myElement = document.getElementById("spiderman");		
+		myElement.style.color = "red";
+		myElement.innerHTML+=' X';
+	};
+	function move()
+	{
+		window.location="level14.html";	//should redirect it to 1_4.html jo ho nai rha h
+	};
+	</script>
 		<meta name="viewport" content="width=device-width" />
 		<title>Bespoke.js</title>
 
@@ -24,12 +84,16 @@
 			</header>
 
 			<article>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
+				<section>
+
+<div id="imagepoint"><img src="/static/images/wonders/9turtle.png" alt="Turtle" height="230" width="230"></div>
+					<h2><div id="question">What is the name of this Statue?</div></br>
+				<a href="javascript: void 0;" onclick="batman();"><div id="batman">A) Statue of Chota Bheem </div></a>
+				<a href="javascript: void 0;" onclick="spiderman();"><div id="spiderman">B) Statue of God </div></a>
+				<a href="javascript: void 0;" onclick="ironman();"><div id="ironman">C) Statue of Liberty </div></a>
+		<a href="javascript: void 0;" onclick="superman();"><div id="superman">D) Statue of Doremon </div></a></h2>
+				</section>
+				
 				
 	
 			</article>
@@ -41,10 +105,7 @@
 					</p>
 				</div>
 
-			<!-- <div class="social">
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			</div> -->
-		</footer>
+					</footer>
 
 		<script src="/static/js/bespoke.min.js"></script>
 		<script src="/static/js/demo.js"></script>
