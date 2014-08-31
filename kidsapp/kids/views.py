@@ -28,7 +28,7 @@ def parallax(request):
 	return render_to_response('parallax.html', context_instance=RequestContext(request))
 
 def level11(request):
-	return render_to_response('1_1.html', context_instance=RequestContext(request))
+	return render_to_response('level11.html', context_instance=RequestContext(request))
 
 def level12(request):
 	return render_to_response('1_2.html', context_instance=RequestContext(request))

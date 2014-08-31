@@ -42,7 +42,7 @@
 		myElement.style.color = "green";
 		myElement.innerHTML+='&#10004;';
 		myElement.style.fontSize="25";
-		setTimeout("move()",2000);
+		setTimeout("moves()",2000);
 	};
 	function superman()
 	{
@@ -56,9 +56,9 @@
 		myElement.style.color = "red";
 		myElement.innerHTML+=' X';
 	};
-	function move()
+	function moves()
 	{
-		window.location="level11.html";	//should redirect it to 1_1.html jo ho nai rha h
+		window.location.assign("/levelaa");	//should redirect it to 1_1.html jo ho nai rha h
 	};
 	</script>
 		<meta name="viewport" content="width=device-width" />
@@ -105,7 +105,7 @@
 				<a href="javascript: void 0;" onclick="batman();"><div id="batman">A) 4 </div></a>
 				<a href="javascript: void 0;" onclick="spiderman();"><div id="spiderman">B) 5 </div></a>
 				<a href="javascript: void 0;" onclick="ironman();"><div id="ironman">C) 7 </div></a>
-		<a href="javascript: void 0;" onclick="superman();"><div id="superman">D) 8 </div></a></h2>
+				<a href="javascript: void 0;" onclick="superman();"><div id="superman">D) 8 </div></a></h2>
 				</section>
 					
 	
